@@ -19,15 +19,7 @@ public class Q7 {
             max = Math.max(max, height[i]);
             rightMax[i] = max;
         }
-//        for (int i : leftMax) {
-//            System.out.print(i + " ");
-//        }
-//        System.out.println();
-//        for (int i : rightMax) {
-//            System.out.print(i + " ");
-//        }
 
-//        System.out.println();
         for (int i = 0; i < n; i++) {
             int waterHeight = Math.min(leftMax[i], rightMax[i]) - height[i];
             waterLevel[i] = Math.max(waterHeight, 0);
